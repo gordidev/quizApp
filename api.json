@@ -1,0 +1,52 @@
+[
+    {
+        "title": "¿QUÉ CORRIENTE ARTÍSTICA INICIÓ PABLO PICCASO?",
+        "answer1":"Impresionismo", "answer2":"Cubismo", "answer3":"Surrealismo",
+        "correct": "2"
+    },
+    {
+        "title": "¿Qué país ganó el mundial de fútbol en 1998?",
+        "answer1":"brasil", "answer2":"alemania", "answer3":"francia",
+        "correct": "3"
+    },
+    {
+        "title": "¿EN QUÉ PAÍS SE ENCUENTRA EL MONTE 'KILIMANJARO'?",
+        "answer1":"KENIA", "answer2":"ETIOPÍA", "answer3":"TANZANIA",
+        "correct": "3"
+    },
+    {
+        "title": "¿CUÁL ES LA MOLÉCULA PORTADORA DE LA ENERGÍA EN LAS CÉLULAS?",
+        "answer1":"ATP", "answer2":"ADN", "answer3":"ARN",
+        "correct": "1"
+    },
+    {
+        "title": "¿CUÁL ES EL PAÍS MÁS POBLADO DE ÁFRICA?",
+        "answer1":"SUDÁFRICA", "answer2":"EGIPTO", "answer3":"NIGERIA",
+        "correct": "3"
+    },
+    {
+        "title": "¿QUÉ QUÍMICO CREÓ LA TABLA PERIÓDICA?",
+        "answer1":"JOHN DALTON", "answer2":"DMITRI MENDELÉYEV", "answer3":"ANTOINE LAVOISIER",
+        "correct": "2"
+    },
+    {
+        "title": "¿QUÉ FILÓSOFO ESCRIBÍO 'LA REPÚBLICA'?",
+        "answer1":"PLATÓN", "answer2":"SÓCRATES", "answer3":"ARISTÓTELES",
+        "correct": "1"
+    },
+    {
+        "title": "¿EN QUÉ PAÍS NACIÓ ADOLF HITLER?",
+        "answer1":"ALEMANIA", "answer2":"AUSTRIA", "answer3":"HUNGRÍA",
+        "correct": "2"
+    },
+    {
+        "title": "¿QUÉ MAR CONECTA EUROPA Y ÁFRICA?",
+        "answer1":"MAR BÁLTICO", "answer2":"MAR DEL NORTE", "answer3":"MAR MEDITERRÁNEO",
+        "correct": "3"
+    },
+    {
+        "title": "¿CUÁL ES EL CONTINENTE MÁS PEQUEÑO?",
+        "answer1":"OCEANÍA", "answer2":"EUROPA", "answer3":"AMÉRICA DEL SUR",
+        "correct": "1"
+    }
+]

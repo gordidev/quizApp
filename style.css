@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    margin-top: 10px;
+}
+input, .btn{
+    transition: 0.3s;
+}
+input:hover, button:hover{
+    transition: 0.3s;
+    font-size: 2rem;
+}
