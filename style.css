@@ -1,3 +1,6 @@
+*{
+user-select: none;
+}
 body{
     text-align: center;
     margin-top: 10px;
@@ -8,4 +11,12 @@ input, .btn{
 input:hover, button:hover{
     transition: 0.3s;
     font-size: 2rem;
+}
+#recordContainer{
+    margin: 10px;
+    gap: 10px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
 }

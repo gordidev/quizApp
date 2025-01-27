@@ -40,7 +40,7 @@ function contadorfunc(){
     }else{
     counter--
     counterElement.innerHTML = counter
-    console.log(counter)
+    //console.log(counter)
     }
     
 }
@@ -59,19 +59,49 @@ function button(answer){
     selected = answer
     if(selected == shuffleQuests[index].correct){
         statusQuest(1)
-        console.log("acertaste");
+        //console.log("acertaste");
     }else{
-        console.log("fallaste");
+        //console.log("fallaste");
         statusQuest(0)
     }
     index++;
     //loadQuest()
 }
 
+let key = 0
+function record(){
+    questsDiv.innerHTML = `
+    <input type="text" placeholder="Username: " id="username"><h2>Puntos: ${points}</h2>
+    <button class="btn btn-primary" onclick="saveRecord()" id="remove">Guardar</button>
+    <button class="btn btn-success" onclick="location.reload()">volver a inicio</button>
+    <div id="records"></div>
+    `
+    const records = document.querySelector("#records")
+    for(let i=0; i < localStorage.length; i++){
+        key = localStorage.key(i)
+        valor = localStorage.getItem(key)
+        records.innerHTML += `<div id="recordContainer" class="bg-primary"><h1>Nombre: ${key}</h1><h1>Puntos: ${valor}</h1><div>`
+    }
+}
+function saveRecord(){
+    const records = document.querySelector("#records")
+    const remove = document.querySelector("#remove")
+    remove.style.display="none"
+    let valor = 0
+    let username = document.querySelector("#username")
+    records.innerHTML = ""
+    localStorage.setItem(username.value, points)
+    for(let i=0; i < localStorage.length; i++){
+        key = localStorage.key(i)
+        valor = localStorage.getItem(key)
+        records.innerHTML += `<div id="recordContainer" class="bg-primary"><h1>Nombre: ${key}</h1><br><h1>Puntos: ${valor}</h1><div>`
+    }
+}
+
 function loadQuest(){
     counter=resetCounter
     if(index == shuffleQuests.length){
-        questsDiv.innerHTML = `<h1>Terminaste</h1><h1>Puntos: ${points}/300</h1><button class="btn btn-success" onclick="location.reload()">Volver a inicio</button>`
+        questsDiv.innerHTML = `<h1>Terminaste</h1><h1>Puntos: ${points}/300</h1><button class="btn btn-primary" onclick="record()">Record</button><br><button class="btn btn-success" onclick="location.reload()">Volver a inicio</button>`
     }else{
         questsDiv.innerHTML = `
         <h1>${index+1}.-${shuffleQuests[index].title}</h1>
